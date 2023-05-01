@@ -22,7 +22,7 @@ def generate(length=16): return ''.join(random.choice(string.ascii_letters + str
 
 def getIP():
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    s.connect(("8.8.8.8", 80))
+    s.connect(("0.0.0.0", 80))
     return s.getsockname()[0]
 
 def getVersion():
